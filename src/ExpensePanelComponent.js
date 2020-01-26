@@ -5,15 +5,15 @@ import { Table } from "react-bootstrap";
 const ExpensePanelComponent = params => {
   return (
     <div className="container">
-      {/* <div className="row">
+      <div className="row">
         <div
           className="col col-xs-8 offset-xs-2"
           style={{ backgroundColor: "rgb(245,245,245)" }}
         >
           <span>{moment().format("LL")}</span>
         </div>
-        <Table responsive variant="dark">
-          <tbody>
+        <Table responsive>
+          {/* <tbody>
             <tr>
               <td>Table cell</td>
               <td>Table cell</td>
@@ -32,9 +32,26 @@ const ExpensePanelComponent = params => {
               <td>Table cell</td>
               <td>Table cell</td>
             </tr>
-          </tbody>
+          </tbody> */}
+          <div class="list-group">
+            <button type="button" class="list-group-item" onClick={()=> alert("this should activate the modal for shit")}>
+              Cras justo odio
+            </button>
+            <button type="button" class="list-group-item">
+              Dapibus ac facilisis in
+            </button>
+            <button type="button" class="list-group-item">
+              Morbi leo risus
+            </button>
+            <button type="button" class="list-group-item">
+              Porta ac consectetur ac
+            </button>
+            <button type="button" class="list-group-item">
+              Vestibulum at eros
+            </button>
+          </div>
         </Table>
-      </div> */}
+      </div>
       <table class="table table-condensed table-bordered">
         <caption>List of stuff</caption>
         <thead>
